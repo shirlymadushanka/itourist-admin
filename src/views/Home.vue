@@ -26,7 +26,11 @@
     <v-card class="itourist-app-card my-8 pa-2">
       <h3 class="mt-2 ml-2">App Overview</h3>
       <h5 class="mb-2 ml-2 grey--text">Monthly Users Summary</h5>
-      <area-chart :data="chartData"></area-chart>
+      <area-chart
+        :data="chartData"
+        :colors="['#63c1d6']"
+        :curve="false"
+      ></area-chart>
     </v-card>
   </div>
 </template>
