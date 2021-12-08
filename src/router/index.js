@@ -35,6 +35,7 @@ const routes = [
 const router = new VueRouter({
   routes,
   mode: "history",
+  base: process.env.NODE_ENV === "production" ? "/itourist-admin/" : "/",
 });
 
 export default router;

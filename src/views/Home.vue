@@ -1,5 +1,5 @@
 <template>
-  <div class="my-2">
+  <div class="my-4">
     <h3>App Overview</h3>
     <v-row>
       <v-col
@@ -23,6 +23,11 @@
         </v-card>
       </v-col>
     </v-row>
+    <v-card class="itourist-app-card my-8 pa-2">
+      <h3 class="mt-2 ml-2">App Overview</h3>
+      <h5 class="mb-2 ml-2 grey--text">Monthly Users Summary</h5>
+      <area-chart :data="chartData"></area-chart>
+    </v-card>
   </div>
 </template>
 
@@ -42,6 +47,18 @@ export default {
       { title: "Total Users", count: "640" },
       { title: "Locations", count: "338" },
     ],
+    chartData: {
+      "March 2020": 110,
+      "Apr 2020": 50,
+      "May 2020": 100,
+      "June 2020": 20,
+      "July 2020": 90,
+      "Aug 2020": 95,
+      "Sep 2020": 80,
+      "Oct 2020": 70,
+      "Nov 2020": 85,
+      "Dec 2020": 98,
+    },
   }),
 };
 </script>
